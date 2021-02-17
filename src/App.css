@@ -1,13 +1,33 @@
 .App {
+ display: grid;
 
 }
-
-.text1{
-  float: right;
+.container{
+  background-color: black;
+  height: 150px;
+  
+  
 }
-.text2{
 
+.inputs{
+  display: block;
+  background-color: grey;
+  height: 800px;
+  width: 80%;
+  margin-left: 10%;
+  border-radius:  0 0 30px 30px;
 }
+.texts{
+  display: flex;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 
 
