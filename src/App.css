@@ -1,36 +1,70 @@
-.App {
- display: grid;
-
+* {
+  padding: 0;
+  margin: 0;
 }
-.container{
+
+.Inputfield {
+  height: 500px;
+  width: 500px;
+}
+
+.Inputfield textarea {
+  height: 100%;
+  width: 100%;
+}
+
+.inputs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 200px;
+}
+
+.inputs-container .result {
   background-color: black;
-  height: 150px;
-  
-  
-}
-
-.inputs{
-  display: block;
-  background-color: grey;
-  height: 800px;
-  width: 80%;
-  margin-left: 10%;
-  border-radius:  0 0 30px 30px;
-}
-.texts{
+  height: 200px;
+  width: 200px;
+  border-radius: 60px;
+  color: aqua;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.submit{
+
+.inputs-container .input-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-
-
-
-
-
-
-
-
+.inputs-container .input-submit input {
+  height: 50px;
+}
+/*# sourceMappingURL=App.css.map */

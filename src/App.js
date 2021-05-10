@@ -1,32 +1,30 @@
 import React from "react";
 import "./App.css";
-import InputField from "./components/Inputfield";
-import Header from "./components/Header";
-
+import Inputfield from "./components/Inputfield";
+import { useState } from "react";
+import { detector } from "./components/detector";
+import ResultBox from "./components/ResultBox";
 
 function App() {
-  
+  const [field1, setField1] = useState("");
+  const [field2, setField2] = useState("");
+  const [pourcentage, setPourcentage] = useState("");
+
   return (
-    <div className="App">
-      
-      <div className="container">
-      <Header />
-      </div>
-      <div className="inputs">
-        <div className="texts">
-          <InputField className="text1" />
-          <InputField className='text2'/> 
+    <>
+      <div className="inputs-container">
+        <Inputfield transfer={setField1} holderText="Type in your code" />
+        <div className="input-submit">
+          <ResultBox pourcentage={pourcentage}/>
+          <input type="submit" onClick={()=>setPourcentage(detector(field1,field2))}/>
         </div>
-        <div className="submit">
-            <button style={{width:"300px",height:"50px",backgroundColor:"black",color:"white",fontSize:"20px"}}>compare</button>
-        </div>
+
+        <Inputfield
+          transfer={setField2}
+          holderText="Type in the stackoverflow code you found :)"
+        />
       </div>
-      
-      
-      
-      
-      
-    </div>
+    </>
   );
 }
 
