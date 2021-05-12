@@ -1,9 +1,12 @@
 import React from "react";
-import { useState } from "react";
-
+import AlertMessage from "./AlertMessage";
 function ResultBox(props) {
-
-  return <div className="result">{props.pourcentage}%</div>;
+  return (
+    <>
+      <AlertMessage message = {props.data.message} type = {props.data.type} className="alert"/>
+      <div className="result">{props.data.pourcentage}%</div>
+    </>
+  );
 }
 
 export default ResultBox;

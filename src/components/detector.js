@@ -45,5 +45,6 @@ export function detector(string, string2) {
   } else {
     var union = hashmap.size + hashmap2.size - intersection;
   }
-  return (intersection / union) * 100;
+  const result =(intersection / union) * 100;
+  return result.toFixed(2)
 }

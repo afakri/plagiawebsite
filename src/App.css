@@ -6,11 +6,14 @@
 .Inputfield {
   height: 500px;
   width: 500px;
+  -webkit-box-shadow: 0 10px 30px -15px;
+          box-shadow: 0 10px 30px -15px;
 }
 
 .Inputfield textarea {
   height: 100%;
   width: 100%;
+  background-color: white;
 }
 
 .inputs-container {
@@ -35,7 +38,7 @@
   height: 200px;
   width: 200px;
   border-radius: 60px;
-  color: aqua;
+  color: white;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +67,27 @@
           justify-content: center;
 }
 
-.inputs-container .input-submit input {
-  height: 50px;
+.inputs-container .input-submit .submit-button {
+  margin-top: 20px;
+}
+
+.big-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.alert {
+  text-align: center;
 }
 /*# sourceMappingURL=App.css.map */
